@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.snap-container {
+  height: 100vh;
+  overflow: auto;  
+  scroll-snap-type: y mandatory;  
+}
+
+.snap-section {
+  text-align: center;
+  padding: 200px 300px 0 300px;
+  scroll-snap-align: start;
+  min-height: 100vh;  
+}
+
+.snap-section:nth-child(1) {
+  background: darkblue;
+}
+
+.snap-section:nth-child(2) {
+  background: darkmagenta;
+}
+
+.snap-section:nth-child(3) {
+  background: rgb(52, 51, 51);
+}
+
+.snap-section h3 {
+  font-family: 'Inter';
+  font-size: 52px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.snap-section p {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 26px;
+}
+
+.snap-section a {
+    display: inline-block;
+    background: darkorange;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    padding: 10px 15px;
+    margin: 20px;
+    border-radius: 8px;
+    color: #fff;
+}
